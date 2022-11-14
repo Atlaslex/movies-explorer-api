@@ -28,7 +28,7 @@ module.exports.createMovie = (req, res, next) => {
     })
     .catch((err) => {
       if (err.name === 'ValidationError') {
-        next(new BadRequestError(ERRORS.MOVIE.NCORRECT_DATA));
+        next(new BadRequestError(ERRORS.MOVIE.INCORRECT_DATA));
       }
       next(err);
     })

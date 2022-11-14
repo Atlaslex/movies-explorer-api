@@ -5,7 +5,6 @@ const allowedCors = [
   'http://localhost:3005',
 ];
 
-// eslint-disable-next-line consistent-return
 module.exports = (req, res, next) => {
   const { origin } = req.headers;
   const { method } = req;
@@ -19,5 +18,5 @@ module.exports = (req, res, next) => {
     res.header('Access-Control-Allow-Headers', requestHeaders);
     return res.end();
   }
-  next();
+  return next();
 };

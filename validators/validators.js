@@ -10,7 +10,7 @@ module.exports.userEmailValidator = [
 module.exports.userPasswordValidator = [
   validate({
     validator: 'isLength',
-    arguments: [1, 30],
+    arguments: [1],
     select: false,
     message: 'Поле "password" должно содержать не менее {ARGS[0]} символов',
   }),
