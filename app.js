@@ -12,7 +12,7 @@ const routes = require('./routes/index');
 const { limiter } = require('./utils/rateLimiter/rateLimiter');
 const { mongo } = require('./utils/config');
 
-const { PORT = 3000 } = process.env;
+const { PORT = 3003 } = process.env;
 
 const app = express();
 mongoose.connect(mongo);

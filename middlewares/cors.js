@@ -1,6 +1,8 @@
 const allowedCors = [
   'https://api.mov-exp-lex.students.nomoredomains.icu',
   'http://api.mov-exp-lex.students.nomoredomains.icu',
+  'https://mov-exp-lex.students.nomoredomains.icu',
+  'http://mov-exp-lex.students.nomoredomains.icu',
   'http://localhost:3000',
   'http://localhost:3005',
 ];
